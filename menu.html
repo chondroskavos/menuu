@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Σελίδα μενού</title>
+    <style>
+        /* Προσαρμογή στυλ για ευανάγνωση */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .flags {
+            float: right;
+            margin-right: 20px;
+        }
+        .flag-icon {
+            width: 30px;
+            height: auto;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        .menu {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Επιλογή Γλώσσας</h1>
+        <div class="flags">
+            <img src="GR-Greece-Flag-icon.png" class="flag-icon" onclick="openPDF('Chondroskavos_gr.pdf')" title="Ελληνικά">
+            <img src="en image.png" class="flag-icon" onclick="openPDF('Chondroskavos_en.pdf')" title="Αγγλικά">
+            <img src="italianflag.jpg" class="flag-icon" onclick="openPDF('Chondroskavos_it.pdf')" title="Ιταλικά">
+        </div>
+    </header>
+    <div class="menu">
+        <!-- Εδώ μπορείτε να προσθέσετε το περιεχόμενο του μενού -->
+    </div>
+    
+    <script>
+        function openPDF(pdfUrl) {
+            window.open(pdfUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
